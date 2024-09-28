@@ -2,14 +2,11 @@
 import streamlit as st 
 import google.generativeai as genai 
  
-st.title("🐧 My chatbot app") 
-st.subheader("Conversation") 
+st.title("🐱 Welcome to Cat's expert advice!") 
+st.subheader("Please feel to chat with us for your inquires about cats!") 
  
 # Capture Gemini API Key 
-# API key = AIzaSyA_oCDraUhLsil4IMtZFHMYdCo2akglDEQ
 gemini_api_key = st.text_input("Gemini API Key: ", placeholder="AIzaSyA_oCDraUhLsil4IMtZFHMYdCo2akglDEQ", type="password") 
-
-# st.write("Welcome to Cat's expert advice!")
 
 # Initialize the Gemini Model 
 if gemini_api_key: 
